@@ -6,12 +6,13 @@ export type UserType = {
 };
 
 export type TweetType = {
+  id: string;
   content: string;
   user: UserType;
-  createdAt: "2020-08-27T12:00:00.000Z";
+  createdAt: string;
   image?: string;
   numberOfComments?: number;
   numberOfRetweets?: number;
   numberOfLikes?: number;
-  impressions: number;
+  impressions?: number;
 };
